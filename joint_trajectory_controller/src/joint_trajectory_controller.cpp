@@ -63,12 +63,12 @@ JointTrajectoryController::init(const std::string & controller_name)
   }
 
   // with the lifecycle node being initialized, we can declare parameters
-  node_->declare_parameter<std::vector<std::string>>("joints", joint_names_);
-  node_->declare_parameter<double>("state_publish_rate", 50.0);
-  node_->declare_parameter<double>("action_monitor_rate", 20.0);
-  node_->declare_parameter<bool>("allow_partial_joints_goal", allow_partial_joints_goal_);
-  node_->declare_parameter<double>("constraints.stopped_velocity_tolerance", 0.01);
-  node_->declare_parameter<double>("constraints.goal_time", 0.0);
+//  node_->declare_parameter<std::vector<std::string>>("joints", joint_names_);
+//  node_->declare_parameter<double>("state_publish_rate", 50.0);
+//  node_->declare_parameter<double>("action_monitor_rate", 20.0);
+//  node_->declare_parameter<bool>("allow_partial_joints_goal", allow_partial_joints_goal_);
+//  node_->declare_parameter<double>("constraints.stopped_velocity_tolerance", 0.01);
+//  node_->declare_parameter<double>("constraints.goal_time", 0.0);
 
   return controller_interface::return_type::SUCCESS;
 }
